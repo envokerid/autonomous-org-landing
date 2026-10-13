@@ -1,0 +1,24 @@
+{
+  "name": "autonomous-org-landing",
+  "version": "1.0.0",
+  "description": "Minimal Express.js landing page, deployed to Cloudflare Workers.",
+  "type": "module",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev:worker": "wrangler dev",
+    "build:worker": "wrangler deploy --dry-run --outdir dist",
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.150.0"
+  }
+}
